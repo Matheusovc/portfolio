@@ -13,8 +13,8 @@ export default function Footer() {
       }}>
         MC
       </span>
-      <p style={{ color: "#444", fontSize: "0.76rem", letterSpacing: "0.04em" }}>
-        &copy; 2025 Matheus Carvalho &mdash; Desenvolvedor Backend Java
+      <p style={{ color: "#888", fontSize: "0.76rem", letterSpacing: "0.04em" }}>
+        &copy; 2026 Matheus Carvalho &mdash; Todos os direitos reservados
       </p>
     </footer>
   );
