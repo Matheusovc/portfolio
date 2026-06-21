@@ -36,8 +36,8 @@ const experiences: Experience[] = [
     tags: ["Linux", "JavaScript", "REST APIs", "HTTP", "FTP", "EDI", "Firewall", "Claude Code", "n8n"],
   },
   {
-    id: "gregora",
-    company: "GRÉGORA",
+    id: "egregora",
+    company: "EGRÉGORA",
     role: "Estagiário de TI — Suporte em Desenvolvimento Front-End",
     period: "Jun 2025 – Jan 2026",
     current: false,
@@ -189,7 +189,7 @@ export default function Journey() {
         </div>
       </motion.div>
 
-      {/* GRÉGORA + RENAPSI */}
+      {/* EGRÉGORA + RENAPSI */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
         {rest.map((exp, i) => (
           <motion.div

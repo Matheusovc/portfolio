@@ -12,6 +12,7 @@ const links = [
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [logoHovered, setLogoHovered] = useState(false);
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 36);
@@ -34,13 +35,21 @@ export default function Nav() {
     >
       <a
         href="#hero"
+        onMouseEnter={() => setLogoHovered(true)}
+        onMouseLeave={() => setLogoHovered(false)}
         style={{
           fontFamily: "Georgia, 'Times New Roman', serif",
-          fontSize: "1rem", letterSpacing: "0.14em",
-          color: "#D4AF37", textDecoration: "none", textTransform: "uppercase",
+          fontSize: "1.4rem", letterSpacing: "0.06em",
+          color: "#D4AF37", textDecoration: "none",
+          transition: "transform 0.25s ease, text-shadow 0.25s ease",
+          display: "inline-block",
+          transform: logoHovered ? "scale(1.08)" : "scale(1)",
+          textShadow: logoHovered
+            ? "0 0 18px rgba(212,175,55,0.7), 0 0 40px rgba(212,175,55,0.3)"
+            : "none",
         }}
       >
-        MC
+        M
       </a>
       <ul style={{ display: "flex", gap: "32px", listStyle: "none" }}>
         {links.map(({ href, label }) => (

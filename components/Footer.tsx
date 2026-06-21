@@ -9,9 +9,9 @@ export default function Footer() {
     >
       <span style={{
         fontFamily: "Georgia, 'Times New Roman', serif",
-        color: "#D4AF37", fontSize: "0.9rem", letterSpacing: "0.12em",
+        color: "#D4AF37", fontSize: "1.1rem", letterSpacing: "0.06em",
       }}>
-        MC
+        M
       </span>
       <p style={{ color: "#888", fontSize: "0.76rem", letterSpacing: "0.04em" }}>
         &copy; 2026 Matheus Carvalho &mdash; Todos os direitos reservados
